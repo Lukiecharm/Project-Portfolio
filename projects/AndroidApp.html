@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathons - SustainaByte | Luca Robson</title>
+
+    <!-- All your CSS files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Luca <span>Robson</span></h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <button id="open-contact" class="contact-btn">Contact Me</button>
+
+    <main class="project-detail">
+        <div class="project-container">
+            <div class="project-header">
+                <h2>Night-Time Student Safety App (Android)</h2>
+                <p class="project-tech">Maps API • Accelerometer • Android</p>
+            </div>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    This project was done by myself and teammates, and involved developing an Android-based personal safety application designed to help students travel home safely at night through real-time monitoring and emergency response features. The app integrates GPS-based route mapping, motion sensor detection, and manual emergency triggers to proactively identify potentially dangerous situations. 
+                    Built as a functional prototype under tight time and resource constraints, the system prioritised reliability, usability, and ethical considerations while meeting client requirements for platform, design, and emergency alerting.
+                </p>
+            </div>
+
+            <div class="project-features">
+                <h3>Key Features & Experience</h3>
+                <ul>
+                    <li>Developed a complete Android application using Android Studio with XML-based UI layouts</li>
+                    <li>Applied Java/Kotlin for mobile app logic, adapting between languages and documentation limitations</li>
+                    <li>Integrated GPS and third-party mapping services to support real-time route navigation</li>
+                    <li>Implemented sensor-based motion detection using accelerometer data to identify abnormal events</li>
+                    <li>Designed a user-controlled emergency alert system with countdown logic to reduce false positives</li>
+                    <li>Evaluated ethical and safety considerations when designing systems involving emergency services</li>
+                </ul>
+            </div>
+
+            <div class="project-gallery">
+                <h3>Gallery</h3>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="../images/projects/AndroidAppMap.png" alt="Main App">
+                        <figcaption>Main App</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/AnomalyDetectionFeature.png" alt="Anomaly Detection">
+                        <figcaption>Anomaly Detection</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/AppSideCode.png" alt="App project files">
+                        <figcaption>App project files</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/ServerSideAPI.png" alt="Server project files/API">
+                        <figcaption>Server project files/API</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/EmergencySOSCall.png" alt="Emergency SOS Call feature">
+                        <figcaption>Emergency SOS Call feature</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/MappingAPI.png" alt="Mapping and location search feature">
+                        <figcaption>Mapping and location search feature</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="project-links">
+                <a href="../index.html" class="btn-back solo">← Back to Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Luca Robson. All rights reserved.</p>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" class="social-btn">📂 View Source</a>
+                <a href="#" id="back-to-top" class="social-btn">↑ Top</a>
+            </div>
+            
+            <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Me</h3>
+            <p>I'm open to web development opportunities, IT support roles, or PC building collaborations. Feel free to get in touch!</p>
+
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Hi Luca, I'd like to..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p class="form-success" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/form.js"></script>
+    <script>
+        document.getElementById('back-to-top')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

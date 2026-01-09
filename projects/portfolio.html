@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Luca Robson</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Luca <span>Robson</span></h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Floating Contact Button -->
+    <button id="open-contact" class="contact-btn">Contact Me</button>
+
+    <!-- Project Detail Content -->
+    <main class="project-detail">
+        <div class="project-container">
+            <div class="project-header">
+                <h2>Personal Portfolio Website</h2>
+                <p class="project-tech">HTML • CSS • JavaScript</p>
+            </div>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    This is the website you're currently viewing, my personal portfolio built entirely from scratch. 
+                    It's designed to showcase my skills, projects, and personality in a clean, modern, and responsive way. 
+                    The goal was to create something professional yet unique that stands out to recruiters and visitors.
+                </p>
+            </div>
+
+            <div class="project-features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Fully responsive design, works perfectly on mobile, tablet, and desktop</li>
+                    <li>Dark/light mode toggle with theme persistence (saved in localStorage) and helps with user preference</li>
+                    <li>Smooth animations and hover effects throughout</li>
+                    <li>Animated contact modal with working form (using FormSubmit.co AJAX)</li>
+                    <li>Project cards with consistent layout and "View More" links to further see what the project is about</li>
+                    <li>Clean, organised code split into multiple CSS and JS files</li>
+                    <li>Minimal and fast-loading, no heavy frameworks</li>
+                </ul>
+            </div>
+
+            <div class="project-gallery">
+                <h3>Screenshots</h3>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="../images/LightTheme-MainPage.png" alt="Homepage - Light Mode">
+                        <figcaption>Homepage - Light Mode</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/DarkTheme-MainPage.png" alt="Homepage - Dark Mode">
+                        <figcaption>Homepage - Dark Mode</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/ContactMe-Section.png" alt="Contact Me Section">
+                        <figcaption>Contact Me Section</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/ProjectsSection-ViewMore.png" alt="View More">
+                        <figcaption>View More Button</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/LightPreview-Of-Code.png" alt="Code">
+                        <figcaption>HTML Code Example</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/FolderPreview.png" alt="Organised">
+                        <figcaption>File Organised</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="project-links">
+                <a href="../index.html" class="btn-back solo">← Back to Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Luca Robson. All rights reserved.</p>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" class="social-btn">📂 View Source</a>
+                <a href="#" id="back-to-top" class="social-btn">↑ Top</a>
+            </div>
+            
+            <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Me</h3>
+            <p>I'm open to web development opportunities, IT support roles, or PC building collaborations. Feel free to get in touch!</p>
+
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Hi Luca, I'd like to..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p class="form-success" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/form.js"></script>
+    <script>
+        // Back to top from footer
+        document.getElementById('back-to-top')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

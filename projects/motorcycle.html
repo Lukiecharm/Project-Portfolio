@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle Restorations | Luca Robson</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Luca <span>Robson</span></h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <button id="open-contact" class="contact-btn">Contact Me</button>
+
+    <main class="project-detail">
+        <div class="project-container">
+            <div class="project-header">
+                <h2>Motorcycle Restorations</h2>
+                <p class="project-tech">Hands-On • Practical • Engineering</p>
+            </div>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    Hands-on experience assisting in the restoration of classic motorcycles. 
+                    This project involved stripping down old bikes, repairing or replacing worn components, 
+                    bodywork and painting, engine work, and reassembly to bring them back to roadworthy and visually stunning condition. 
+                    It combined mechanical engineering, attention to detail, and practical problem-solving.
+                </p>
+            </div>
+
+            <div class="project-features">
+                <h3>Skills & Experience</h3>
+                <ul>
+                    <li>Full teardown and rebuild of classic motorcycles</li>
+                    <li>Engine diagnostics and minor repairs</li>
+                    <li>Bodywork repair (dents, rust treatment, sanding)</li>
+                    <li>Professional painting and finishing</li>
+                    <li>Electrical system troubleshooting and rewiring</li>
+                    <li>Component sourcing and compatibility research</li>
+                    <li>Safety checks and final road testing</li>
+                </ul>
+            </div>
+
+            <div class="project-gallery">
+                <h3>Restoration Gallery</h3>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="../images/projects/YamahaBefore.jpg" alt="Yamaha RD 250 Before">
+                        <figcaption>Yamaha RD 250 Before</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/YamahaRestored.jpg" alt="Yamaha RD 250 Restored">
+                        <figcaption>Yamaha RD 250 Restored</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/" alt="Suzuki Before">
+                        <figcaption>Suzuki Before</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/" alt="Suzuki Restored">
+                        <figcaption>Suzuki Restored</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/" alt="Coming Soon">
+                        <figcaption>Coming Soon</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/" alt="Coming Soon">
+                        <figcaption>Coming Soon</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="project-links">
+                <a href="../index.html" class="btn-back solo">← Back to Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Luca Robson. All rights reserved.</p>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" class="social-btn">📂 View Source</a>
+                <a href="#" id="back-to-top" class="social-btn">↑ Top</a>
+            </div>
+            
+            <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Me</h3>
+            <p>I'm open to web development opportunities, IT support roles, or PC building collaborations. Feel free to get in touch!</p>
+
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Hi Luca, I'd like to..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p class="form-success" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/form.js"></script>
+    <script>
+        document.getElementById('back-to-top')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

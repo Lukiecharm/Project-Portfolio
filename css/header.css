@@ -1,0 +1,44 @@
+    /* Header */
+.header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(60px);
+}
+
+[data-theme="dark"] .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.header h1 span {
+    color: var(--accent-color);
+}
+
+
+#theme-toggle {
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] #theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

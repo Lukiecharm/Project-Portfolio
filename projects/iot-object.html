@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Detection | Luca Robson</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Luca <span>Robson</span></h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <!-- Floating Contact Button -->
+    <button id="open-contact" class="contact-btn">Contact Me</button>
+
+    <!-- Project Detail Content -->
+    <main class="project-detail">
+        <div class="project-container">
+            <div class="project-header">
+                <h2>IoT Object Detection</h2>
+                <p class="project-tech">IoT • RasberryPi • Python</p>
+            </div>
+
+            <div class="project-overview">
+                <h3>Overview</h3>
+                <p>
+                    This project involved designing and developing a smart IoT-based security camera system that enhances traditional surveillance by integrating computer vision and web technologies. 
+                    Unlike conventional cameras that simply record footage, this system is capable of detecting objects and identifying the presence of people in real time with a percentage guess of how sure the system is of that object, with detection results displayed through a web interface. 
+                    Built using Python, Raspberry Pi hardware, and a Flask backend, the project demonstrates how intelligent vision systems can be combined with IoT platforms to create more proactive and responsive security solutions.
+                </p>
+            </div>
+
+            <div class="project-features">
+                <h3>Skills & Experience</h3>
+                <ul>
+                    <li>Developed an IoT-based smart security system integrating hardware, software, and web technologies</li>
+                    <li>Applied Python programming to process real-time camera input and manage detection logic</li>
+                    <li>Worked with Raspberry Pi hardware, including camera module setup and configuration</li>
+                    <li>Built a Flask backend to serve live detection results to a web interface</li>
+                    <li>Gained experience handling real-time data streams from hardware devices</li>
+                    <li>Collaborated within a group project environment, contributing to planning, development, and testing</li>
+                    <li>Improved problem-solving and debugging skills across hardware and software components</li>
+                </ul>
+            </div>
+
+            <div class="project-gallery">
+                <h3>Screenshots</h3>
+                <div class="gallery-grid">
+                    <figure class="gallery-item">
+                        <img src="../images/projects/IoTDetectionPercentage.png" alt="Main App">
+                        <figcaption>IoT demonstration</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/RasberryPiPlaceholder.png" alt="Anomaly Detection">
+                        <figcaption>RasberryPi Placeholder</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/IoTCodeRepo.png" alt="App project files">
+                        <figcaption>Code Repository</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/IoTCodePyFlask.png" alt="Server project files/API">
+                        <figcaption>IoT Code + Flask</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="../images/projects/IoTPercentageDetection.png" alt="Emergency SOS Call feature">
+                        <figcaption>Perecentage Detection</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            
+            <div class="project-links">
+                <a href="../index.html" class="btn-back solo">← Back to Portfolio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 Luca Robson. All rights reserved.</p>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-btn">💼 LinkedIn</a>
+                <a href="https://github.com/yourusername/your-portfolio-repo" target="_blank" class="social-btn">📂 View Source</a>
+                <a href="#" id="back-to-top" class="social-btn">↑ Top</a>
+            </div>
+            
+            <p class="footer-note">Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Contact Me</h3>
+            <p>I'm open to web development opportunities, IT support roles, or PC building collaborations. Feel free to get in touch!</p>
+
+            <form id="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Hi Luca, I'd like to..."></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <p class="form-success" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/theme.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/form.js"></script>
+    <script>
+        // Back to top from footer
+        document.getElementById('back-to-top')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
