@@ -1,0 +1,52 @@
+    /* Intro Animation */
+#intro-overlay {
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.01),
+            rgba(0, 0, 0, 0.01)
+        ),
+        var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.intro-content {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: introFadeIn 1s ease forwards;
+}
+
+.intro-content h1 {
+    font-size: 2.0rem;
+    letter-spacing: 1px;
+}
+
+.intro-content p {
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+/* Fade + slide animation */
+@keyframes introFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Exit animation */
+#intro-overlay.hide {
+    animation: introFadeOut 0.8s ease forwards;
+}
+
+@keyframes introFadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
